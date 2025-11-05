@@ -1,0 +1,517 @@
+/* Universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  z-index: 1000;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 20px;
+}
+
+#navbar li a {
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 1px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+}
+
+.list-item2 {
+  padding-left: 700px;
+}
+
+/* ------------------------------
+    MEDIA QUERIES
+--------------------------------*/
+
+/* For large tablets and small laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .list-item2 {
+    padding-left: 400px;
+  }
+
+  #navbar li a {
+    font-size: 14px;
+  }
+}
+
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  #navbar {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .list-item2 {
+    padding-left: 0;
+  }
+
+  #navbar li {
+    padding: 15px;
+  }
+
+  #navbar li a {
+    font-size: 14px;
+  }
+}
+
+/* For mobile phones (max-width: 480px) */
+@media (max-width: 480px) {
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+  }
+
+  #navbar li {
+    padding: 10px;
+  }
+
+  #navbar li a {
+    font-size: 13px;
+  }
+
+  .list-item2 {
+    padding-left: 0;
+  }
+}
+
+/* Main content of the Page */
+
+/*  Background section */
+#bg-image1 {
+  background: #000 url('../images/hamburger.jpg') no-repeat fixed center / cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/*  Heading styling */
+#bg-image1 h1 {
+  color: #000;
+  font-size: 38px;
+  letter-spacing: 6px;
+  margin-left: 30px;
+  margin-bottom: 50px;
+  font-weight: 500;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+/* For laptops & large tablets */
+@media (max-width: 1024px) {
+  #bg-image1 {
+    background-position: center;
+  }
+
+  #bg-image1 h1 {
+    font-size: 32px;
+    letter-spacing: 5px;
+    margin-left: 25px;
+    margin-bottom: 45px;
+  }
+}
+
+/*  For tablets */
+@media (max-width: 768px) {
+  #bg-image1 {
+    background-attachment: scroll; 
+    background-size: cover; 
+    height: 400px;
+  }
+
+  #bg-image1 h1 {
+    font-size: 26px;
+    letter-spacing: 3px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+/*  For mobile phones */
+@media (max-width: 480px) {
+  #bg-image1 {
+    background: #000 url('../images/hamburger.jpg') no-repeat cover;
+    height: 210px;
+    margin-top: 120px;
+  }
+
+  #bg-image1 h1 {
+    color:#000;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+  }
+}
+
+/*  About Section Container */
+#about-image {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 60px 80px;
+  flex-wrap: wrap;
+}
+
+/* 🖼️ Image Wrapper */
+#about-image1 img {
+  height: 600px;
+  width: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+/* 📝 Text Section */
+#about-catering1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Main Heading */
+#about-catering1 h1 {
+  font-size: 42px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: #222;
+  margin-bottom: 25px;
+  margin-left: 110px;
+}
+
+/* Subheading */
+#about-catering1 h6 {
+  font-size: 16px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 25px;
+  margin-left: 130px;
+}
+#about-catering1 span{
+  background-color: #555;
+  color:#fff;
+  border-radius: 2px;
+}
+/* Paragraph */
+#about-catering1 .para2 {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  width: 90%;
+  text-align: justify;
+}
+
+/* --------------------------------
+   📱 MEDIA QUERIES
+-------------------------------- */
+
+/* 💻 Tablets */
+@media (max-width: 1024px) {
+  #about-image {
+    padding: 40px 50px;
+    gap: 40px;
+  }
+
+  #about-image1 img {
+    width: 380px;
+    height: auto;
+  }
+
+  #about-catering1 h1 {
+    font-size: 34px;
+    margin-left: 20px;
+  }
+  #about-catering1 h6{
+    margin-left: 20px;
+  }
+}
+
+/* 📲 Tablets & Small Laptops */
+@media (max-width: 768px) {
+  #about-image {
+    flex-direction: column; /* stack image and text vertically */
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+  }
+
+  #about-image1 img {
+    width: 80%;
+    height: auto;
+  }
+
+  #about-catering1 {
+    align-items: center;
+  }
+
+  #about-catering1 h1 {
+    font-size: 32px;
+  }
+
+  #about-catering1 h6 {
+    font-size: 15px;
+  }
+
+  #about-catering1 #para2 {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+
+/* 📱 Mobile Phones */
+@media (max-width: 480px) {
+  #about-catering1 h1 {
+    font-size: 26px;
+  }
+
+  #about-catering1 h6 {
+    font-size: 14px;
+  }
+
+  #about-catering1 #para2 {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  #about-image1 img {
+    width: 100%;
+  }
+}
+
+
+/* horizontal line */
+
+#horizontal-line{
+  margin-top: 30px;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+
+/* Menu Page */
+
+#menu-page{
+  display: flex;
+  margin-top: 100px;
+  flex: 1;
+}
+
+#content-menu h1{
+  margin-left: 250px;
+  margin-top: 70px;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+#content-menu h2{
+  margin-left:120px ;
+  margin-top: 50px;
+  letter-spacing: 4px;
+  font-weight: 500;
+}
+#content-menu p{
+  margin-left: 120px;
+  margin-top: 20px;
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  color:#757575;
+}
+#menu-image img{
+  margin-left: 50px;
+  border-radius: 17px;
+  opacity: 0.9;
+  margin-top: 50px;
+}
+
+/* 💻 Medium Screens (Tablets & small laptops) */
+@media (max-width: 1024px) {
+  #menu-page {
+    padding: 0 50px;
+  }
+
+  #content-menu h1 {
+    margin-left: 150px;
+    font-size: 36px;
+  }
+
+  #content-menu h2 {
+    margin-left: 80px;
+    font-size: 24px;
+  }
+
+  #content-menu p {
+    margin-left: 80px;
+    font-size: 15px;
+  }
+
+  #menu-image img {
+    width: 380px;
+    margin-left: 20px;
+  }
+}
+
+/* 📲 Tablets */
+@media (max-width: 768px) {
+  #menu-page {
+    flex-direction: column; /* Stack text and image */
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+  }
+
+  #content-menu h1,
+  #content-menu h2,
+  #content-menu p {
+    margin-left: 0;
+  }
+
+  #content-menu h1 {
+    font-size: 32px;
+    margin-top: 40px;
+  }
+
+  #content-menu h2 {
+    font-size: 22px;
+    margin-top: 30px;
+  }
+
+  #content-menu p {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  #menu-image img {
+    width: 80%;
+    margin: 30px 0 0 0;
+  }
+}
+
+/* 📱 Mobile Phones */
+@media (max-width: 480px) {
+  #content-menu h1 {
+    font-size: 26px;
+    letter-spacing: 2px;
+  }
+
+  #content-menu h2 {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  #content-menu p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  #menu-image img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+}
+
+
+#horizontal-line1{
+margin-top: 100px;
+margin-left: 10%;
+margin-right: 10%;
+}
+
+/* contact page */
+
+#contact-page{
+  margin-top: 150px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+#contact-page h1{
+  letter-spacing: 2px;
+  font-size: 36px;
+  font-weight: 500;
+}
+#contact-page p{
+  margin-top: 60px;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 2px;
+}
+#contact-page address{
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  color:#757575;
+}
+#contact-page a{
+  color:#555;
+  font-weight: 600;
+}
+/* form validation */
+#form-validation{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 60px;
+}
+#form-validation input{
+  border: none;
+  border-bottom: 1px solid #757575;
+  height: 40px;
+  width: 100%;
+  opacity: 0.9;
+  padding-bottom: 23px;
+  font-size: 13px;
+  margin-top: 40px;
+  font-weight: 500;
+}
+#form-validation input:hover{
+  border:1px solid #757575;
+  padding: 10px;
+}
+#form-validation button{
+  margin-top: 70px;
+  padding: 10px;
+ width: 140px;
+ font-weight: 500;
+ font-size: 14px;
+}
+#form-validation button:hover{
+  background-color: #757575;
+  transition: 1s;
+  color:#fff;
+}
+
+footer{
+  margin-top: 120px;
+  text-align: center;
+  height: 100px;
+  background-color: #f1f1f1;
+  padding: 50px;
+}
+footer a{
+  color: #757575;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
